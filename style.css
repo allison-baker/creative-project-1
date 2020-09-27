@@ -13,6 +13,7 @@ h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 800;
   font-size: 2.75em;
+  color: #462521;
 }
 
 h2 {
@@ -20,11 +21,13 @@ h2 {
   font-weight: 500;
   font-size: 2em;
   padding-bottom: 20px;
+  color: #4D828F;
 }
 
 p {
   font-family: 'Dosis', sans-serif;
   font-size: 1.3em;
+  color: #333333;
 }
 
 a {
@@ -32,6 +35,36 @@ a {
   font-size: 1.3em;
   text-decoration: none;
   color: #462521;
+}
+
+label {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1em;
+}
+
+input {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1em;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+}
+
+input:focus {
+  border: 2px solid #A2BDC7;
+}
+
+input[type=submit] {
+  border: 3px solid #4D828F;
+  background-color: white;
+  width: 50%;
+  margin: 20px 0;
+}
+
+input[type=submit]:hover {
+  border: 3px solid #4D828F;
+  background-color: #4D828F;
+  color: white;
 }
 
 a:hover {
@@ -84,9 +117,12 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   background-color: rgba(0,0,0,0.5);
   border: 3px solid white;
+}
+
+.hero-text > h1, .hero-text > p {
+  color: white;
 }
 
 #home-box {
@@ -115,10 +151,87 @@ a:hover {
   display: block;
 }
 
+.image-span {
+  width: 100%;
+}
+
+.text-container {
+  width: 70%;
+  margin: 50px auto;
+}
+
+.meal-header {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.list-container {
+  width: 85%;
+  margin: 25px auto;
+}
+
+.list-container > ul > li {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.3em;
+  color: #333333;
+}
+
 #contact-box {
   text-align: center;
   width: 80%;
   margin: 50px auto;
+}
+
+#contact-form {
+  margin: 50px auto;
+}
+
+#about-title {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#image-container {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-image-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-image-text > h2 {
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+
+.id-pic {
+  width: 100%;
+}
+
+#about-text {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#contact-button {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: block;
+  padding: 15px 50px;
+  border: 3px solid #795546;
+}
+
+#contact-button:hover {
+  background-color: #795546;
+  color: white;
 }
 
 .footer-container {
@@ -159,6 +272,27 @@ a:hover {
     width: 100%;
     margin: 3% 0;
   }
+
+  #contact-form {
+    width: 80%;
+  }
+
+  #image-container {
+    flex-direction: column;
+  }
+
+  .about-image-text {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #about-text {
+    width: 80%;
+  }
+
+  #contact-button {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 960px) {
@@ -175,6 +309,28 @@ a:hover {
     width: 47%;
     margin: 1.5%;
   }
+
+  #contact-form {
+    width: 70%;
+  }
+
+  #image-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about-image-text {
+    width: 48%;
+    margin-bottom: 15px;
+  }
+
+  #about-text {
+    width: 70%;
+  }
+
+  #contact-button {
+    width: 75%;
+  }
 }
 
 @media screen and (min-width: 961px) {
@@ -189,5 +345,22 @@ a:hover {
   .food-square {
     width: 22%;
     margin: 1.5%;
+  }
+
+  .image-header {
+    height: 40%;
+    overflow: hidden;
+  }
+
+  #contact-form {
+    width: 50%;
+  }
+
+  .about-image-text {
+    width: 22%;
+  }
+
+  #about-text {
+    width: 60%;
   }
 }
