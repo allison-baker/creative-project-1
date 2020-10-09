@@ -32,7 +32,7 @@ p {
 
 a {
   font-family: 'Dosis', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   text-decoration: none;
   color: #462521;
 }
@@ -176,13 +176,13 @@ a:hover {
   color: #333333;
 }
 
-#contact-box {
+.page-info {
   text-align: center;
   width: 80%;
   margin: 50px auto;
 }
 
-#contact-form {
+.form {
   margin: 50px auto;
 }
 
@@ -273,7 +273,7 @@ a:hover {
     margin: 3% 0;
   }
 
-  #contact-form {
+  .form {
     width: 80%;
   }
 
@@ -310,7 +310,7 @@ a:hover {
     margin: 1.5%;
   }
 
-  #contact-form {
+  .form {
     width: 70%;
   }
 
@@ -352,7 +352,7 @@ a:hover {
     overflow: hidden;
   }
 
-  #contact-form {
+  .form {
     width: 50%;
   }
 
