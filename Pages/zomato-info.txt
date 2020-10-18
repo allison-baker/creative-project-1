@@ -1,2 +1,5 @@
 a95c92cac4c055f20c8906b7e6660e3d
 https://developers.zomato.com/documentation
+
+4de98fe993d040cb929866cc9a836e86
+https://opencagedata.com/api

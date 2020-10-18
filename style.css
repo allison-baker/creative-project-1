@@ -12,21 +12,36 @@ body, html {
 h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 800;
-  font-size: 2.75em;
+  font-size: 2.75rem;
   color: #462521;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-  font-size: 2em;
+  font-size: 2rem;
   padding-bottom: 20px;
   color: #4D828F;
 }
 
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  color: #795546;
+  text-align: center;
+}
+
+li {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.3rem;
+  color: #333333;
+}
+
 p {
   font-family: 'Dosis', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   color: #333333;
 }
 
@@ -39,12 +54,12 @@ a {
 
 label {
   font-family: 'Dosis', sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 input {
   font-family: 'Dosis', sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   width: 100%;
   padding: 10px 20px;
   margin: 8px 0;
@@ -170,12 +185,6 @@ a:hover {
   margin: 25px auto;
 }
 
-.list-container > ul > li {
-  font-family: 'Dosis', sans-serif;
-  font-size: 1.3em;
-  color: #333333;
-}
-
 .page-info {
   text-align: center;
   width: 80%;
@@ -273,6 +282,11 @@ a:hover {
     margin: 3% 0;
   }
 
+  #results {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .form {
     width: 80%;
   }
@@ -310,6 +324,11 @@ a:hover {
     margin: 1.5%;
   }
 
+  #results {
+    width: 65%;
+    margin: 0 auto;
+  }
+
   .form {
     width: 70%;
   }
@@ -345,6 +364,11 @@ a:hover {
   .food-square {
     width: 22%;
     margin: 1.5%;
+  }
+
+  #results {
+    width: 50%;
+    margin: 0 auto;
   }
 
   .image-header {

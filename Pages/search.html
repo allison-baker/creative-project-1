@@ -2,13 +2,13 @@
 <html>
   <head>
     <title>Utah's Best Eats</title>
-    <meta charset="utf-8" name="viewport" content="width=device-width;
-      initial-scale=1.0;"/>
+    <meta charset="utf-8" name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
     <link rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Playfair+Display:wght@500;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Playfair+Display:wght@300;500;800&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../style.css"/>
   </head>
@@ -54,7 +54,7 @@
     <div class="page-info">
       <h2>Want to Search for a Restaurant That's Not on Our Page?</h2>
       <p>Use this search tool, powered by Zomato, to find restaurants in your
-        area based on location, type of food, or name.</p>
+        area based on zip code and type of food. Only the top 20 results are shown.</p>
       <hr/>
       <p>Have suggestions to improve this search function?
         <a href="contact.html">Contact us!</a></p>
@@ -62,23 +62,15 @@
 
     <div class="form" id="search-form">
       <form>
+        <label for="location">Zip Code (required):</label><br/>
+        <input type="text" id="location" value=""><br/>
         <label for="food">Type of Food:</label><br/>
         <input type="text" id="food" value=""><br/>
-        <label for="location">City Name:</label><br/>
-        <input type="text" id="location" value=""><br/>
-        <label for="restaurant">Restaurant Name:</label></br>
-        <input type="text" id="restaurant" value=""></br>
         <input type="submit" id="submit" value="Submit">
       </form>
     </div>
 
     <div id="results">
-      <div id="food-type">
-      </div>
-      <div id="restaurant-location">
-      </div>
-      <div id="restaurant-name">
-      </div>
     </div>
 
     <div class="footer-container">
@@ -89,12 +81,7 @@
       </div>
     </div>
 
-    <script>
-      document.getElementById("submit").addEventListener("click" event => {
-        event.preventDefault();
-        console.log(document.getElementById("food"));
-      });
-    </script>
+    <script src="../script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
